@@ -1,4 +1,10 @@
+# 1. Movie Ratings Analyzer
+# Ask the user to input a list of movies with ratings like [("Titanic", 8), ("Inception", 9), ...]. Compute
+# the average rating, find the highest-rated movie, and list all movies with rating above the
+# average.
+
 def movie_analyzer():
+    
     
     print("Enter movies and ratings like: Avatar-9,Matrix-8,Joker-9")
    
@@ -17,7 +23,7 @@ def movie_analyzer():
                 name, rating = entry.split("-")
                 name = name.strip()
                 rating = float(rating.strip())
-                movies.append((name, rating))
+                movies.append((name, rating)) 
             except:
                 print(f"Invalid format for '{entry.strip()}'. Use Movie-Rating (Example: Titanic-8)")
                 continue
